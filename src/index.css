@@ -1,0 +1,59 @@
+/* Add these to your existing index.css */
+.hover-scale:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.nav-item-hover:hover {
+  color: #646cff !important;  /* Matches your existing color scheme */
+  opacity: 0.8;
+}
+
+/* Additional helpful utilities */
+.transition-smooth {
+  transition: all 0.3s ease;
+}
+
+.shadow-light {
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.shadow-dark {
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+/* Responsive typography */
+@media (max-width: 768px) {
+  :root {
+    font-size: 14px;
+  }
+}
+
+/* Improve interactive elements */
+a, button, .clickable {
+  transition: all 0.3s ease;
+}
+
+/* Custom scrollbar (optional) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #646cff;
+  border-radius: 4px;
+}
+
+@media (prefers-color-scheme: dark) {
+  ::-webkit-scrollbar-track {
+    background: #333;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #535bf2;
+  }
+}
